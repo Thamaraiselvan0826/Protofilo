@@ -1,0 +1,272 @@
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        header {
+            width: 100%;
+            background: transparent;
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            animation: header 2s ease-in-out;
+        }
+        
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/programming-software-concept-with-people-scene-vector-illustration_198565-2583.webp);
+            background-size: cover;
+            max-height: 100vh;
+            background-position: top;
+        }
+        
+        .logo {
+            width: 10vh;
+            color: white;
+            margin-left: 10px;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-left: 10px;
+            margin-right: 20px;
+            list-style: none;
+            position: sticky;
+            top: 0;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 20px;
+            position: relative;
+            animation: nav 2s ease-in-out;
+            position: sticky;
+            top: 0;
+        }
+        
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 4px;
+            left: 0;
+            background: #fff;
+            bottom: -6px;
+            -o-border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            border-radius: 20px;
+            -o-transition: .5s;
+            -webkit-transition: .5s;
+            -moz-transition: .5s;
+            -ms-transition: .5s;
+            transition: .5s;
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        
+        .menu {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            top: 17px;
+            right: 15px;
+            cursor: pointer;
+            -o-transition: .5s;
+            -o-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            border-radius: 2px;
+            -webkit-transition: .5s;
+            -moz-transition: .5s;
+            -ms-transition: .5s;
+            transition: .5s;
+            overflow: hidden;
+            display: none;
+        }
+        
+        .menu span {
+            position: absolute;
+            width: 25px;
+            height: 4px;
+            background: red;
+            top: 20px;
+            -o-transition: .5s;
+            -o-border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            border-radius: 20px;
+            -webkit-transition: .5s;
+            -moz-transition: .5s;
+            -ms-transition: .5s;
+            transition: .5s;
+        }
+        
+        .menu span:nth-child(1) {
+            width: 20px;
+            -o-transform: translateY(-10px);
+            -webkit-transform: translateY(-10px);
+            -moz-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+            transform: translateY(-10px);
+        }
+        
+        .menu.active span:nth-child(1) {
+            width: 70%;
+            -o-transform: translate(0) rotate(45deg);
+            -webkit-transform: translate(0) rotate(45deg);
+            -moz-transform: translate(0) rotate(45deg);
+            -ms-transform: translate(0) rotate(45deg);
+            transform: translate(0) rotate(45deg);
+        }
+        
+        .menu.active span:nth-child(2) {
+            width: 70%;
+            -o-transform: translate(0) rotate(-45deg);
+            -webkit-transform: translate(0) rotate(-45deg);
+            -moz-transform: translate(0) rotate(-45deg);
+            -ms-transform: translate(0) rotate(-45deg);
+            transform: translate(0) rotate(-45deg);
+        }
+        
+        .menu span:nth-child(2) {
+            width: 20px;
+            -o-transform: translateY(10px);
+            -webkit-transform: translateY(10px);
+            -moz-transform: translateY(10px);
+            -ms-transform: translateY(10px);
+            transform: translateY(10px);
+        }
+        
+        .menu.active span:nth-child(3) {
+            -o-transform: translateX(60px);
+            -webkit-transform: translateX(60px);
+            -moz-transform: translateX(60px);
+            -ms-transform: translateX(60px);
+            transform: translateX(60px);
+        }
+        
+        nav ul li a ion-icon {
+            width: 20;
+            height: 20px;
+        }
+        
+        .main {
+            position: relative;
+            color: white;
+            margin-left: 10vh;
+            margin-top: 25vh;
+            animation: main 2s ease-in-out;
+        }
+        
+        h2 {
+            font-size: 10vh;
+            font-weight: 800;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: transparent;
+            -webkit-text-stroke: 1px #ff0000;
+            background: url(/img/back.png);
+            -webkit- background-clip: text;
+            background-position: 0, 0;
+            -webkit-animation: bg 20s linear infinite;
+            animation: bg 20s linear infinite;
+        }
+        
+        @keyframes bg {
+            100% {
+                background-position: 2000px, 0;
+            }
+        }
+        
+        .img {
+            position: absolute;
+            top: 20vh;
+            right: 60vh;
+            width: 50vh;
+            -webkit-animation: img 2s ease-in-out;
+            animation: img 2s ease-in-out;
+        }
+        
+        @keyframes header {
+            0% {
+                -webkit-transform: translateY(-100%);
+                -webkit-transform: translateY(-100%);
+                -moz-transform: translateY(-100%);
+                -ms-transform: translateY(-100%);
+                -o-transform: translateY(-100%);
+            }
+        }
+        
+        @keyframes main {
+            0% {
+                -webkit-transform: translateX(-100vh);
+                -webkit-transform: translateX(-100vh);
+                -moz-transform: translateX(-100vh);
+                -ms-transform: translateX(-100vh);
+                -o-transform: translateX(-100vh);
+            }
+        }
+        
+        @keyframes img {
+            0% {
+                -webkit-transform: translateX(100vh);
+                -webkit-transform: translateX(100vh);
+                -moz-transform: translateX(100vh);
+                -ms-transform: translateX(100vh);
+                -o-transform: translateX(100vh);
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .menu {
+                display: block;
+            }
+            body {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/programming-software-concept-with-people-scene-vector-illustration_198565-2583.webp);
+            }
+            header {
+                margin-top: -1px;
+            }
+            .logo {
+                margin-top: 0;
+            }
+            nav ul li {
+                display: block;
+                text-align: center;
+                right: 0;
+                margin-top: 0;
+                margin-left: 1px;
+            }
+            nav ul li a {
+                background: transparent;
+                top: 50px;
+                right: -80vh;
+                -o-transition: .5s;
+                -webkit-transition: .5s;
+                -moz-transition: .5s;
+                -ms-transition: .5s;
+                transition: .5s;
+            }
+            nav.active ul li a {
+                right: 40px;
+            }
+            .img {
+                z-index: -1;
+                width: 50%;
+            }
+            p {
+                flex-wrap: wrap;
+            }
+        }
